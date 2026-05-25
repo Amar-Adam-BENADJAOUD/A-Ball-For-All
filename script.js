@@ -91,7 +91,7 @@
       detail.innerHTML = `
         <h2>${entry.title}</h2>
         <p>${entry.text}</p>
-        <div class="sport-photos">
+        <div class="sport-photos ${key}">
           ${entry.photos
             .map(
               (src) =>
@@ -134,7 +134,7 @@
     let toastTimer = null;
     otherCard.addEventListener("click", () => {
       toast.textContent =
-        "Sorry — the archive of our other events is currently being rebuilt. Please check back soon!";
+        "Sorry ! The archive of our other events is currently being rebuilt. Please check back soon !";
       toast.classList.add("show");
       clearTimeout(toastTimer);
       toastTimer = setTimeout(() => toast.classList.remove("show"), 3800);
