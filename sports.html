@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports — A Ball For All</title>
+  <meta name="description" content="Discover the adaptive sports we organize: blind football, wheelchair basketball, boccia and adaptive skiing." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="A Ball For All logo" />
+        <span class="brand-name">A Ball For All</span>
+      </a>
+      <nav class="primary">
+        <a href="index.html">Home</a>
+        <a href="sports.html">Sports</a>
+        <a href="research.html">Research</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Our Sports</h1>
+    <p class="lead">Pick a discipline to learn how we adapt the game so every athlete can compete.</p>
+
+    <div class="sports-grid">
+      <button class="sport-card" data-sport="blind-football">Blind Football</button>
+      <button class="sport-card" data-sport="wheelchair-basketball">Wheelchair Basketball</button>
+      <button class="sport-card" data-sport="boccia">Boccia</button>
+      <button class="sport-card" data-sport="adaptive-skiing">Adaptive Skiing</button>
+      <button class="sport-card other">Other</button>
+    </div>
+
+    <section id="sport-detail" class="sport-detail" aria-live="polite"></section>
+  </main>
+
+  <div id="scroll-arrow" class="scroll-arrow" aria-hidden="true">↓</div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <p>© 2026 A Ball For All — Fictional non-profit project supporting UN SDG 3.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
